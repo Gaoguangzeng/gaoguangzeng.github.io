@@ -2,9 +2,9 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <title>toc生成 | 集运增广</title>
-  <meta name="keywords" content=" test ">
-  <meta name="description" content="toc生成 | 集运增广">
+  <title>vim学习记录 | 集运增广</title>
+  <meta name="keywords" content=" vim ">
+  <meta name="description" content="vim学习记录 | 集运增广">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 <meta name="description" content="页面未找到">
 <meta property="og:type" content="website">
@@ -287,9 +287,9 @@
 </aside>
 <div class="post">
     <div class="pjax">
-        <article id="post-探索/forsee1" class="article article-type-post" itemscope itemprop="blogPost">
+        <article id="post-工具/vim学习记录" class="article article-type-post" itemscope itemprop="blogPost">
     
-        <h1 class="article-title">toc生成</h1>
+        <h1 class="article-title">vim学习记录</h1>
     
     <div class="article-meta">
         
@@ -297,26 +297,26 @@
         
         <span class="book">
             
-                <a  data-rel="探索">探索</a>
+                <a  data-rel="工具">工具</a>
             
         </span>
         
         
         <span class="tag">
             
-            <a class="color5">test</a>
+            <a class="color4">vim</a>
             
         </span>
         
     </div>
     <div class="article-meta">
         
-        创建时间:<time class="date" title='更新时间: 2019-12-27 13:16:08'>2019-12-27 11:57</time>
+        创建时间:<time class="date" title='更新时间: 2019-12-29 22:16:26'>2019-12-29 14:31</time>
         
     </div>
     <div class="article-meta">
         
-        <span>字数:3</span>
+        <span>字数:357</span>
         
         
         <span id="busuanzi_container_page_pv">
@@ -346,7 +346,7 @@
     
     <div class="toc-ref">
     
-        <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#biaoti"><span class="toc-text">biaoti</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#cibiaoto"><span class="toc-text">cibiaoto</span></a></li></ol></li></ol>
+        <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#vim介绍"><span class="toc-text">vim介绍</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#结构"><span class="toc-text">结构</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#基本命令"><span class="toc-text">基本命令</span></a></li></ol></li></ol>
     
 <style>
     .left-col .switch-btn,
@@ -362,9 +362,57 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p><div class='inner-toc'><h2>目录</h2><ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#biaoti"><span class="toc-text">biaoti</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#cibiaoto"><span class="toc-text">cibiaoto</span></a></li></ol></li></ol></div></p>
-<h1 id="biaoti"><a href="#biaoti" class="headerlink" title="biaoti"></a>biaoti</h1><p>zhengwen<br>zhengada<br>cjaddad<br>s<br>dsaasfasf<br>adfaf</p>
-<h2 id="cibiaoto"><a href="#cibiaoto" class="headerlink" title="cibiaoto"></a>cibiaoto</h2>
+        <hr>
+<p>title: vim学习记录<br>categories: 工具<br>date: 2019-12-29 14:31:22<br>tags: vim</p>
+<hr>
+<h1 id="vim介绍"><a href="#vim介绍" class="headerlink" title="vim介绍"></a>vim介绍</h1><h2 id="结构"><a href="#结构" class="headerlink" title="结构"></a>结构</h2><ul>
+<li>vi文本编辑器有三种模式:命令、编辑和ex模式。</li>
+</ul>
+<ol>
+<li><p>启动时，vi以命令模式启动。如果您不确定自己处于哪种模式，请按Esc返回命令模式。<br>在命令模式下，你可以使用方向键移动，或者使用vi移动键</p>
+<table>
+<thead>
+<tr>
+<th>快捷键</th>
+<th>作用</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>h</td>
+<td>向左</td>
+</tr>
+<tr>
+<td>j</td>
+<td>向下</td>
+</tr>
+<tr>
+<td>k</td>
+<td>向上</td>
+</tr>
+<tr>
+<td>l</td>
+<td>向右</td>
+</tr>
+</tbody></table>
+</li>
+<li><p>编辑模式<br>编辑模式允许您插入或附加文本。</p>
+</li>
+<li><ol>
+<li>要在光标当前位置之前插入文本，在命令模式下，请按i。类似地，</li>
+</ol>
+</li>
+<li><ol start="2">
+<li>要在光标之后追加，请键入a。<br>(请记住，在此模式下，光标键不能移动。)<br>输入完文本后，按Esc回到命令模式。然后可以退出vi编辑模式</li>
+</ol>
+</li>
+<li><p><code>ex</code>模式<br>vi怎么保存与退出？这需要进入ex模式<br>ex模式是命令模式的扩展。进入它，按Esc，然后:(冒号)。光标将在冒号提示符下移动到屏幕底部。<br>输入<code>:w</code>写文件，<br>输入<code>:q</code>退出。您可以通过输入<code>:wq</code>将它们组合起来保存并退出。然而，如果您已经完成了您的文件，从命令模式输入Shift-z-z通常会更方便。</p>
+</li>
+</ol>
+<h2 id="基本命令"><a href="#基本命令" class="headerlink" title="基本命令"></a>基本命令</h2><ul>
+<li>Shift-z-z  保存文件并退出vi编辑器</li>
+<li>Shift-u    撤消对当前行的所有更改</li>
+</ul>
+
       
        <hr><span style="font-style: italic;color: gray;"> 转载请注明来源，欢迎对文章中的引用来源进行考证，欢迎指出任何有错误或不够清晰的表达。可以在下面评论区评论，也可以邮件至 2142292583@qq.com </span>
     </div>
@@ -373,12 +421,12 @@
 
 
 <div class="article_copyright">
-    <p><span class="copy-title">文章标题:</span>toc生成</p>
-    <p><span class="copy-title">文章字数:</span><span class="post-count">5</span></p>
+    <p><span class="copy-title">文章标题:</span>vim学习记录</p>
+    <p><span class="copy-title">文章字数:</span><span class="post-count">357</span></p>
     <p><span class="copy-title">本文作者:</span><a  title="Gao Guang-Zeng">Gao Guang-Zeng</a></p>
-    <p><span class="copy-title">发布时间:</span>2019-12-27, 11:57:40</p>
-    <p><span class="copy-title">最后更新:</span>2019-12-27, 13:16:08</p>
-    <span class="copy-title">原始链接:</span><a class="post-url" href="/2019/12/27/%E6%8E%A2%E7%B4%A2/forsee1/" title="toc生成">http://gaoguangzeng.github.io/2019/12/27/%E6%8E%A2%E7%B4%A2/forsee1/</a>
+    <p><span class="copy-title">发布时间:</span>2019-12-29, 14:31:22</p>
+    <p><span class="copy-title">最后更新:</span>2019-12-29, 22:16:26</p>
+    <span class="copy-title">原始链接:</span><a class="post-url" href="/2019/12/29/%E5%B7%A5%E5%85%B7/vim%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95/" title="vim学习记录">http://gaoguangzeng.github.io/2019/12/29/%E5%B7%A5%E5%85%B7/vim%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95/</a>
     <p>
         <span class="copy-title">版权声明:</span><i class="fa fa-creative-commons"></i> <a rel="license noopener" href="http://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank" title="CC BY-NC-SA 4.0 International" target = "_blank">"署名-非商用-相同方式共享 4.0"</a> 转载请保留原文链接及作者。
     </p>
@@ -393,7 +441,7 @@
 
 <script>
     var gitment = new Gitment({
-        id: 'http://gaoguangzeng.github.io/2019/12/27/%E6%8E%A2%E7%B4%A2/forsee1/', // 可选。默认为 location.href
+        id: 'http://gaoguangzeng.github.io/2019/12/29/%E5%B7%A5%E5%85%B7/vim%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95/', // 可选。默认为 location.href
         owner: 'Gaoguangzeng',
         repo: 'gaoguangzeng.github.io',
         oauth: {
